@@ -26,7 +26,7 @@ class MedVectorsClusterer:
 
     def __init__(
         self,
-        model_name: str = "abhinand/MedVectors-base-v0.1",
+        model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
         device: str = None,
         max_length: int = 512
     ):
@@ -306,7 +306,7 @@ def example_kmeans_clustering():
     print("Example 1: K-Means Clustering")
     print("=" * 70)
 
-    clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-small-v0.1")
+    clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Sample medical texts from different categories
     texts = [
@@ -344,7 +344,7 @@ def example_disease_categorization():
     print("Example 2: Disease Categorization")
     print("=" * 70)
 
-    clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-base-v0.1")
+    clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Various diseases
     diseases = [
@@ -387,7 +387,7 @@ def example_clinical_notes_clustering():
     print("Example 3: Clinical Notes Clustering")
     print("=" * 70)
 
-    clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-small-v0.1")
+    clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Clinical note excerpts
     notes = [
@@ -416,7 +416,7 @@ def example_dbscan_anomaly_detection():
     print("Example 4: Anomaly Detection with DBSCAN")
     print("=" * 70)
 
-    clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-small-v0.1")
+    clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Texts with one outlier
     texts = [
@@ -447,7 +447,7 @@ def example_optimal_clusters():
     print("Example 5: Finding Optimal Number of Clusters")
     print("=" * 70)
 
-    clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-small-v0.1")
+    clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     texts = [
         "Heart attack symptoms include chest pain, shortness of breath, and sweating.",

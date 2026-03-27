@@ -39,7 +39,7 @@ class MedVectorsComparison:
         print("\n" + "=" * 70)
         print("Loading MedVectors (Embedding Model)")
         print("=" * 70)
-        self.medvectors_name = "abhinand/MedVectors-small-v0.1"
+        self.medvectors_name = "kiranbeethoju/MedVectors-small-v0.1"
         self.medvectors_tokenizer = AutoTokenizer.from_pretrained(self.medvectors_name)
         self.medvectors_model = AutoModel.from_pretrained(self.medvectors_name).to(self.device)
         self.medvectors_model.eval()

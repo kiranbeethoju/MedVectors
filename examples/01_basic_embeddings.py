@@ -22,7 +22,7 @@ class MedVectorsEncoder:
 
     def __init__(
         self,
-        model_name: str = "abhinand/MedVectors-base-v0.1",
+        model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
         device: str = None,
         max_length: int = 512
     ):
@@ -144,7 +144,7 @@ def example_basic_usage():
     print("=" * 70)
 
     # Initialize encoder
-    encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-base-v0.1")
+    encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Sample medical texts
     query = "What are the symptoms of myocardial infarction?"
@@ -173,7 +173,7 @@ def example_batch_processing():
     print("=" * 70)
 
     # Initialize encoder
-    encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-small-v0.1")
+    encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Sample medical documents (simulating a small corpus)
     corpus = [
@@ -213,9 +213,9 @@ def example_model_comparison():
     test_text = "Patient presents with acute myocardial infarction and requires immediate intervention."
 
     model_sizes = [
-        "abhinand/MedVectors-small-v0.1",
-        "abhinand/MedVectors-base-v0.1",
-        # "abhinand/MedVectors-large-v0.1"  # Uncomment if large model is available
+        "kiranbeethoju/MedVectors-small-v0.1",
+        "kiranbeethoju/MedVectors-base-v0.1",
+        # "kiranbeethoju/MedVectors-large-v0.1"  # Uncomment if large model is available
     ]
 
     for model_name in model_sizes:
@@ -238,7 +238,7 @@ def example_query_document_encoding():
     print("=" * 70)
 
     # Initialize encoder
-    encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-base-v0.1")
+    encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Sample queries (what a user might search)
     queries = [

@@ -102,9 +102,9 @@ pip install matplotlib  # For visualization examples
 
 All examples support different model sizes:
 
-- `abhinand/MedVectors-small-v0.1` - Lightweight, faster inference
-- `abhinand/MedVectors-base-v0.1` - Balanced performance
-- `abhinand/MedVectors-large-v0.1` - Highest accuracy
+- `kiranbeethoju/MedVectors-small-v0.1` - Lightweight, faster inference
+- `kiranbeethoju/MedVectors-base-v0.1` - Balanced performance
+- `kiranbeethoju/MedVectors-large-v0.1` - Highest accuracy
 
 Replace the `model_name` parameter in any example to use a different size.
 
@@ -116,7 +116,7 @@ Replace the `model_name` parameter in any example to use a different size.
 from examples.01_basic_embeddings import MedVectorsEncoder
 
 # Initialize encoder
-encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-base-v0.1")
+encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Generate embedding
 text = "Patient presents with chest pain and elevated cardiac enzymes."
@@ -211,7 +211,7 @@ loaded_embeddings = np.load('embeddings.npy')
 Reduce batch size or use a smaller model:
 ```python
 encoder = MedVectorsEncoder(
-    model_name="abhinand/MedVectors-small-v0.1",
+    model_name="kiranbeethoju/MedVectors-small-v0.1",
     max_length=256  # Reduce from 512
 )
 embeddings = encoder.encode(texts, batch_size=16)  # Reduce from 32

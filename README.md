@@ -70,6 +70,9 @@ MedVectors includes several model variants, each fine-tuned using different stra
 
 ### Model Download Links
 
+- **MedVectors-small-v0.1**: [kiranbeethoju/MedVectors-small-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-small-v0.1)
+- **MedVectors-base-v0.1**: [kiranbeethoju/MedVectors-base-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-base-v0.1)
+- **MedVectors-large-v0.1**: [kiranbeethoju/MedVectors-large-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-large-v0.1)
 
 ### Dataset Links
 ---
@@ -168,7 +171,7 @@ from transformers import AutoTokenizer, AutoModel
 import torch
 
 # Load model
-model_name = "abhinand/MedVectors-base-v0.1"
+model_name = "kiranbeethoju/MedVectors-base-v0.1"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name).to("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -188,7 +191,7 @@ print(f"Embedding shape: {embeddings.shape}")
 from examples.01_basic_embeddings import MedVectorsEncoder
 
 # Initialize encoder
-encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-base-v0.1")
+encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Generate embedding
 text = "What are the symptoms of myocardial infarction?"
@@ -211,7 +214,7 @@ Generate embeddings for medical text:
 from examples.01_basic_embeddings import MedVectorsEncoder
 
 # Initialize
-encoder = MedVectorsEncoder(model_name="abhinand/MedVectors-base-v0.1")
+encoder = MedVectorsEncoder(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Single text
 query = "What are the symptoms of diabetes?"
@@ -246,7 +249,7 @@ Build a semantic search system:
 from examples.02_semantic_search import MedVectorsRetriever
 
 # Initialize retriever
-retriever = MedVectorsRetriever(model_name="abhinand/MedVectors-base-v0.1")
+retriever = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Add documents
 documents = [
@@ -280,7 +283,7 @@ Cluster medical documents:
 from examples.03_clustering import MedVectorsClusterer
 
 # Initialize clusterer
-clusterer = MedVectorsClusterer(model_name="abhinand/MedVectors-small-v0.1")
+clusterer = MedVectorsClusterer(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
 # Cluster texts
 texts = [
@@ -311,7 +314,7 @@ Classify medical texts:
 from examples.04_classification import MedVectorsClassifier
 
 # Initialize classifier
-classifier = MedVectorsClassifier(model_name="abhinand/MedVectors-base-v0.1")
+classifier = MedVectorsClassifier(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Training data
 texts = [
@@ -345,7 +348,7 @@ Build a Retrieval-Augmented Generation system:
 from examples.05_rag_system import MedVectorsRAG
 
 # Initialize RAG system
-rag = MedVectorsRAG(model_name="abhinand/MedVectors-base-v0.1")
+rag = MedVectorsRAG(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
 # Add knowledge base
 documents = [
@@ -378,7 +381,7 @@ Generate embeddings for text.
 
 ```python
 MedVectorsEncoder(
-    model_name: str = "abhinand/MedVectors-base-v0.1",
+    model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
     device: str = None,
     max_length: int = 512
 )
@@ -394,7 +397,7 @@ Semantic search over a document corpus.
 
 ```python
 MedVectorsRetriever(
-    model_name: str = "abhinand/MedVectors-base-v0.1",
+    model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
     device: str = None,
     max_length: int = 512
 )
@@ -412,7 +415,7 @@ Cluster documents using embeddings.
 
 ```python
 MedVectorsClusterer(
-    model_name: str = "abhinand/MedVectors-base-v0.1",
+    model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
     device: str = None,
     max_length: int = 512
 )
@@ -430,7 +433,7 @@ Classify texts using embeddings.
 
 ```python
 MedVectorsClassifier(
-    model_name: str = "abhinand/MedVectors-base-v0.1",
+    model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
     device: str = None,
     max_length: int = 512
 )
@@ -448,7 +451,7 @@ RAG system for question answering.
 
 ```python
 MedVectorsRAG(
-    model_name: str = "abhinand/MedVectors-base-v0.1",
+    model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
     device: str = None,
     max_length: int = 512
 )
@@ -612,7 +615,7 @@ print(f"MRR: {metrics['MRR']:.4f}")
 
 ```python
 encoder = MedVectorsEncoder(
-    model_name="abhinand/MedVectors-small-v0.1",
+    model_name="kiranbeethoju/MedVectors-small-v0.1",
     max_length=256  # Reduce from 512
 )
 embeddings = encoder.encode(texts, batch_size=16)  # Reduce from 32
@@ -662,11 +665,11 @@ xcrutil list | grep Metal
 If you use MedVectors in your research, please cite our work:
 
 ```bibtex
-@software{balachandran2024medvectors,
-  author = {Balachandran, Abhinand},
+@software{beethoju2024medvectors,
+  author = {Beethoju, Kiran},
   title = {MedVectors: Medical-Focused Embedding Models},
   year = {2024},
-  url = {https://github.com/abhinand5/MedVectors}
+  url = {https://github.com/kiranbeethoju/MedVectors}
 }
 ```
 
@@ -680,10 +683,8 @@ This project is licensed under the Apache License Version 2.0. See [LICENSE](LIC
 
 ## Resources
 
-- **Hugging Face Models:** [abhinand/MedVectors](https://huggingface.co/abhinand)
-- **Hugging Face Datasets:** [abhinand/medVectors-training-triplets-v1](https://huggingface.co/datasets/abhinand/medVectors-training-triplets-v1)
-- **Blog Post:** [MedVectors Blog](https://huggingface.co/blog/abhinand/medvectors-finetuned-embedding-models-for-medical-ir)
-- **GitHub Issues:** [Report Issues](https://github.com/abhinand5/MedVectors/issues)
+- **Hugging Face Models:** [kiranbeethoju/MedVectors](https://huggingface.co/kiranbeethoju/MedVectors)
+- **GitHub Issues:** [Report Issues](https://github.com/kiranbeethoju/MedVectors/issues)
 
 ---
 
@@ -695,4 +696,4 @@ Developing MedVectors requires significant resources. If you find it valuable, c
 
 ## Contact
 
-For any queries regarding the codebase or research, please reach out to Abhinand Balachandran at abhinandb.ml@gmail.com.
+For any queries regarding the codebase or research, please reach out to Kiran Beethoju via [GitHub Issues](https://github.com/kiranbeethoju/MedVectors/issues).

@@ -24,7 +24,7 @@ class MedVectorsRAG:
 
     def __init__(
         self,
-        model_name: str = "abhinand/MedVectors-base-v0.1",
+        model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
         device: str = None,
         max_length: int = 512
     ):
@@ -226,7 +226,7 @@ def example_medical_qa():
     print("Example 1: Medical Q&A System")
     print("=" * 70)
 
-    rag = MedVectorsRAG(model_name="abhinand/MedVectors-base-v0.1")
+    rag = MedVectorsRAG(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Build knowledge base
     documents = [
@@ -294,7 +294,7 @@ def example_clinical_decision_support():
     print("Example 2: Clinical Decision Support")
     print("=" * 70)
 
-    rag = MedVectorsRAG(model_name="abhinand/MedVectors-base-v0.1")
+    rag = MedVectorsRAG(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Clinical guidelines knowledge base
     guidelines = [
@@ -355,7 +355,7 @@ def example_medical_literature_search():
     print("Example 3: Medical Literature Search")
     print("=" * 70)
 
-    rag = MedVectorsRAG(model_name="abhinand/MedVectors-base-v0.1")
+    rag = MedVectorsRAG(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Abstracts from medical literature
     abstracts = [
@@ -417,7 +417,7 @@ def example_filtered_retrieval():
     print("Example 4: Filtered Retrieval")
     print("=" * 70)
 
-    rag = MedVectorsRAG(model_name="abhinand/MedVectors-small-v0.1")
+    rag = MedVectorsRAG(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Knowledge base with metadata
     documents = [

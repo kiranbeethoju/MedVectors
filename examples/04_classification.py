@@ -28,7 +28,7 @@ class MedVectorsClassifier:
 
     def __init__(
         self,
-        model_name: str = "abhinand/MedVectors-base-v0.1",
+        model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
         device: str = None,
         max_length: int = 512
     ):
@@ -271,7 +271,7 @@ def example_disease_classification():
     print("Example 1: Disease Classification by Body System")
     print("=" * 70)
 
-    classifier = MedVectorsClassifier(model_name="abhinand/MedVectors-small-v0.1")
+    classifier = MedVectorsClassifier(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Training data
     texts = [
@@ -326,7 +326,7 @@ def example_triage_classification():
     print("Example 2: Triage Level Classification")
     print("=" * 70)
 
-    classifier = MedVectorsClassifier(model_name="abhinand/MedVectors-base-v0.1")
+    classifier = MedVectorsClassifier(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Triage scenarios
     scenarios = [
@@ -382,7 +382,7 @@ def example_specialty_routing():
     print("Example 3: Medical Specialty Routing")
     print("=" * 70)
 
-    classifier = MedVectorsClassifier(model_name="abhinand/MedVectors-small-v0.1")
+    classifier = MedVectorsClassifier(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     # Patient complaints
     complaints = [
@@ -438,7 +438,7 @@ def example_symptom_diagnosis():
     print("Example 4: Symptom-Based Diagnosis")
     print("=" * 70)
 
-    classifier = MedVectorsClassifier(model_name="abhinand/MedVectors-base-v0.1")
+    classifier = MedVectorsClassifier(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Symptom descriptions
     symptoms = [

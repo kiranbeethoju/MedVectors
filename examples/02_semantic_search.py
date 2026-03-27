@@ -23,7 +23,7 @@ class MedVectorsRetriever:
 
     def __init__(
         self,
-        model_name: str = "abhinand/MedVectors-base-v0.1",
+        model_name: str = "kiranbeethoju/MedVectors-base-v0.1",
         device: str = None,
         max_length: int = 512
     ):
@@ -186,7 +186,7 @@ def example_basic_search():
     print("=" * 70)
 
     # Initialize retriever
-    retriever = MedVectorsRetriever(model_name="abhinand/MedVectors-base-v0.1")
+    retriever = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Sample medical corpus
     documents = [
@@ -222,7 +222,7 @@ def example_clinical_search():
     print("Example 2: Clinical Document Search")
     print("=" * 70)
 
-    retriever = MedVectorsRetriever(model_name="abhinand/MedVectors-base-v0.1")
+    retriever = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     # Clinical notes corpus
     documents = [
@@ -275,7 +275,7 @@ def example_threshold_search():
     print("Example 3: Search with Threshold")
     print("=" * 70)
 
-    retriever = MedVectorsRetriever(model_name="abhinand/MedVectors-small-v0.1")
+    retriever = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-small-v0.1")
 
     documents = [
         {'id': 1, 'text': 'Insulin is a hormone that regulates blood sugar levels.'},
@@ -311,7 +311,7 @@ def example_save_load_corpus():
     import pickle
 
     # Create and save corpus
-    retriever = MedVectorsRetriever(model_name="abhinand/MedVectors-base-v0.1")
+    retriever = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-base-v0.1")
 
     documents = [
         {'id': 1, 'text': 'Sample medical document 1.'},
@@ -336,7 +336,7 @@ def example_save_load_corpus():
         loaded_data = pickle.load(f)
 
     # Create new retriever and load
-    retriever2 = MedVectorsRetriever(model_name="abhinand/MedVectors-base-v0.1")
+    retriever2 = MedVectorsRetriever(model_name="kiranbeethoju/MedVectors-base-v0.1")
     retriever2.corpus = loaded_data['documents']
     retriever2.corpus_embeddings = loaded_data['embeddings']
 
