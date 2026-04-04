@@ -70,9 +70,9 @@ MedVectors includes several model variants, each fine-tuned using different stra
 
 ### Model Download Links
 
-- **MedVectors-small-v0.1**: [kiranbeethoju/MedVectors-small-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-small-v0.1)
-- **MedVectors-base-v0.1**: [kiranbeethoju/MedVectors-base-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-base-v0.1)
-- **MedVectors-large-v0.1**: [kiranbeethoju/MedVectors-large-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-large-v0.1)
+- **MedVectors-small-v0.1**: [kiranbeethoju/MedVectors-small-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-small-v0.1) - ✅ Available on HuggingFace
+- **MedVectors-base-v0.1**: [kiranbeethoju/MedVectors-base-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-base-v0.1) - ✅ Available on HuggingFace
+- **MedVectors-large-v0.1**: [kiranbeethoju/MedVectors-large-v0.1](https://huggingface.co/kiranbeethoju/MedVectors-large-v0.1) - [Coming soon]
 
 ### Dataset Links
 ---
