@@ -86,7 +86,7 @@ if __name__ == "__main__":
         print("""
 Usage: python3 save_and_upload_model.py <model_name> <hf_repo>
 """)
-        print("\nAvailable models (BAAI base models):")
+        print("\nAvailable models (MedVectors base models):")
         print("  - BAAI/bge-small-en-v1.5")
         print("  - BAAI/bge-base-en-v1.5")
         print("  - BAAI/bge-large-en-v1.5")
