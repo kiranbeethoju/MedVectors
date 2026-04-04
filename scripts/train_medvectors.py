@@ -271,7 +271,8 @@ class MedVectorsTrainer:
         # Train model
         logger.info("\nStarting training...")
         model.fit(
-            train_objectives=[(train_dataloader, train_loss)],
+            train_objectives=[train_dataloader],
+            loss=train_loss,
             evaluator=val_evaluator,
             epochs=self.config['num_epochs'],
             warmup_steps=warmup_steps,
